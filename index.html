@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: palevioletred;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+        }
+        header{
+            color: white;
+            font-size: 6rem;
+            text-align: center;
+        }
+        #container{
+            background-color: white;
+            text-align: center;
+            border-radius: 0.5rem;
+            margin-left: 25%;
+            margin-top:10%;
+            margin-right: 25%;
+            margin-bottom: 15%;
+            padding: 4rem;;
+            box-shadow:15px 10px 0px rgba(10, 10, 10, 0.7);
+        }
+        label{
+            font-size: 2rem;
+        }
+        #bt{
+            font-size: 1.23rem;
+            margin-left: 0.5rem;
+            border-radius: 0.4rem;
+            background-color:rgb(137, 17, 218);            
+        }
+        input{
+            height: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>covid tracker</header>
+    <div id="container">
+        <label for="ct">enter un pays</label><br><br>
+        <input type="text" name="ct" id="ct">
+        <button id="bt" onclick="search()" >search</button>
+        <h1>pays:</h1>
+        <h2 id="pays"></h2>
+        <h1>cas confirme</h1>
+        <h2 id="confirm"></h2>
+        <h1>nombre de morts</h1>
+        <h2 id="mort"></h2>
+        <h1>recovered</h1>
+        <h2 id="recov"></h2>
+    </div>
+</body>
+<script src="api_ftech.js"></script>
+</html>
